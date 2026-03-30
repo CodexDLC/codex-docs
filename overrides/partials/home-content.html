@@ -1,0 +1,83 @@
+<section class="codex-home-shell">
+  <section class="codex-section codex-section--surface" id="home-libraries">
+    <div class="codex-section__header">
+      <span class="codex-kicker codex-kicker--dark">Libraries</span>
+      <h2>Pick a library, then jump into its live documentation</h2>
+      <p>
+        The landing page stays public and clean. The detailed docs still live in each library site, and the hub just routes people to the right entrypoint.
+      </p>
+    </div>
+
+    <div class="codex-card-grid">
+      <a class="codex-card" href="{{ 'libraries/codex-core/' | url }}">
+        <span class="codex-card__eyebrow">Foundation</span>
+        <h3>codex-core</h3>
+        <p>DTOs, settings, utilities, and shared runtime primitives.</p>
+      </a>
+      <a class="codex-card" href="{{ 'libraries/codex-platform/' | url }}">
+        <span class="codex-card__eyebrow">Infrastructure</span>
+        <h3>codex-platform</h3>
+        <p>Workers, streams, Redis integrations, and platform plumbing.</p>
+      </a>
+      <a class="codex-card" href="{{ 'libraries/codex-ai/' | url }}">
+        <span class="codex-card__eyebrow">AI layer</span>
+        <h3>codex-ai</h3>
+        <p>Provider-agnostic LLM abstractions and AI integration surfaces.</p>
+      </a>
+      <a class="codex-card" href="{{ 'libraries/codex-services/' | url }}">
+        <span class="codex-card__eyebrow">Business logic</span>
+        <h3>codex-services</h3>
+        <p>Service-level engines and higher-level application workflows.</p>
+      </a>
+      <a class="codex-card" href="{{ 'libraries/codex-django/' | url }}">
+        <span class="codex-card__eyebrow">Runtime</span>
+        <h3>codex-django</h3>
+        <p>Django modules and runtime integrations for Codex-based projects.</p>
+      </a>
+      <a class="codex-card" href="{{ 'libraries/codex-django-cli/' | url }}">
+        <span class="codex-card__eyebrow">Tooling</span>
+        <h3>codex-django-cli</h3>
+        <p>CLI scaffolding, blueprints, and developer bootstrap tooling.</p>
+      </a>
+      <a class="codex-card" href="{{ 'libraries/codex-bot/' | url }}">
+        <span class="codex-card__eyebrow">Bots</span>
+        <h3>codex-bot</h3>
+        <p>Aiogram-based bot framework for Codex products and automations.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="codex-section codex-section--split">
+    <div>
+      <span class="codex-kicker codex-kicker--dark">Updates</span>
+      <h2>Keep the site alive without turning it into a heavy blog system</h2>
+      <p>
+        Use a lightweight updates page for release notes, migration notices, and ecosystem announcements. That keeps the landing fresh without bloating the docs stack.
+      </p>
+      <a class="codex-text-link" href="{{ 'updates/' | url }}">Read updates</a>
+    </div>
+    <div class="codex-stack">
+      <article class="codex-note">
+        <span>Launch</span>
+        <h3>The hub is now a real front page</h3>
+        <p>Hero first, focused navigation on top, and a clean transition into the regular site content below.</p>
+      </article>
+      <article class="codex-note">
+        <span>Next</span>
+        <h3>Add release snapshots from the library sites</h3>
+        <p>The next layer is short update entries that surface what changed across the stack.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="codex-section codex-section--surface codex-section--compact">
+    <div class="codex-section__header">
+      <span class="codex-kicker codex-kicker--dark">Developers</span>
+      <h2>Internal standards stay in the repository, just not on the front page</h2>
+      <p>
+        Contributor references are still available when someone wants to join the project, but the public face stays focused on navigation and discovery.
+      </p>
+      <a class="md-button" href="{{ 'developers/' | url }}">Open developer references</a>
+    </div>
+  </section>
+</section>

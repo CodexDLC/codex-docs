@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  {% if page.is_homepage %}
+    <script>document.documentElement.classList.add("codex-homepage")</script>
+  {% endif %}
+{% endblock %}
+
+{% block hero %}
+  {% if page.is_homepage %}
+    {% include "partials/home-hero.html" %}
+  {% endif %}
+{% endblock %}
+
+{% block tabs %}
+  {% if not page.is_homepage %}
+    {% if "navigation.tabs.sticky" not in features %}
+      {% if "navigation.tabs" in features %}
+        {% include "partials/tabs.html" %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
+{% endblock %}
+
+{% block site_nav %}
+  {% if not page.is_homepage %}
+    {{ super() }}
+  {% endif %}
+{% endblock %}
+
+{% block container %}
+  {% if page.is_homepage %}
+    <div class="md-content codex-home-content" data-md-component="content">
+      <article class="md-content__inner md-typeset">
+        {% include "partials/home-content.html" %}
+      </article>
+    </div>
+  {% else %}
+    {{ super() }}
+  {% endif %}
+{% endblock %}

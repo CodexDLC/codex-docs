@@ -1,29 +1,20 @@
-# Libraries Catalog
+# Libraries
 
-This catalog defines the current library landscape that the docs platform must support.
+Choose a library from the left sidebar. Each page gives a short description and the direct link to its public documentation.
 
-| Library | Role | Current docs shape | Standard priority |
-| --- | --- | --- | --- |
-| `codex-core` | Foundation layer for DTOs, settings, utilities, and PII handling | Mostly aligned, but landing tone and roadmap placement need cleanup | High |
-| `codex-platform` | Infrastructure layer: Redis, workers, streams, notifications | Strong architecture/reference split, weaker product landing | High |
-| `codex-ai` | Provider-agnostic LLM abstraction layer | Strong package story, weaker canonical landing structure | High |
-| `codex-services` | Business logic engines | Good shell, thin landing and roadmap policy gaps | High |
-| `codex-django` | Django runtime modules for Codex projects | One of the strongest candidate references for landing design | Reference |
-| `codex-django-cli` | CLI scaffolding and blueprint package | Close to target, but naming and palette drift remain | Medium |
-| `codex-bot` | Aiogram-based bot framework | Separate migration track because shell and version model drift the most | Critical |
+## Current stack
 
-## Metadata contract
+- `codex-core`: foundation layer for DTOs, settings, utilities, and shared primitives
+- `codex-platform`: infrastructure layer for workers, Redis, streams, and notifications
+- `codex-ai`: provider-agnostic AI abstraction layer
+- `codex-services`: service-level business logic
+- `codex-django`: Django runtime modules for Codex projects
+- `codex-django-cli`: CLI tooling and scaffolding
+- `codex-bot`: bot framework and automations layer
 
-Every library onboarded into the platform must expose:
+## How to use this section
 
-- `library_id`
-- `display_name`
-- `role`
-- `maturity_status`
-- `latest_docs_url`
-- `supported_version_lines`
-- `related_libraries`
-- `readme_source`
-- `landing_owner`
-
-The canonical metadata shape lives in [Library Metadata Template](../template-pages/library-metadata.md).
+- Open a library page in the sidebar
+- Read the short summary
+- Click `Documentation` to go to the live docs site
+- Click `Repository` if you need the source code

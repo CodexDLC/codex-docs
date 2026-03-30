@@ -1,9 +1,11 @@
-site_name: codex-docs
-site_description: Codex ecosystem docs hub and governance source of truth
+site_name: Codex ecosystem hub
+site_description: Central hub for Codex libraries, updates, and developer references
 site_author: Codex Team
+site_url: https://codexdlc.github.io/codex-docs/
 
 theme:
   name: material
+  custom_dir: overrides
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -22,10 +24,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.sections
-    - navigation.expand
     - navigation.top
-    - navigation.breadcrumbs
     - search.suggest
     - search.highlight
     - content.code.copy
@@ -37,6 +36,9 @@ plugins:
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/home.js
 
 markdown_extensions:
   - admonition
@@ -50,41 +52,13 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Libraries:
-      - Catalog: libraries/index.md
-  - Ecosystem:
-      - Architecture: ecosystem/architecture.md
-      - Roadmap: ecosystem/roadmap.md
-      - Version Policy: ecosystem/version-policy.md
-      - Changelog Policy: ecosystem/changelog-policy.md
-  - Standards:
-      - Overview: standards/index.md
-      - Information Architecture: standards/information-architecture.md
-      - Library Landing Standard: standards/library-landing-standard.md
-      - README and PyPI Standard: standards/readme-pypi-standard.md
-      - API Reference Standard: standards/api-reference-standard.md
-      - Theme and Shell Standard: standards/theme-shell-standard.md
-      - Navigation Standard: standards/navigation-standard.md
-      - Cross-linking Standard: standards/cross-linking-standard.md
-      - Versioning Standard: standards/versioning-standard.md
-      - Changelog and Roadmap Standard: standards/changelog-roadmap-standard.md
-  - Templates:
-      - Library Landing: template-pages/library-landing.md
-      - README: template-pages/readme.md
-      - PyPI Description: template-pages/pypi-description.md
-      - Changelog: template-pages/changelog.md
-      - Migration Guide: template-pages/migration-guide.md
-      - Library Metadata: template-pages/library-metadata.md
-  - ADR:
-      - ADR-001 Docs Platform Model: adr/ADR-001-docs-platform-model.md
-      - ADR-002 Versioning Model: adr/ADR-002-versioning-model.md
-      - ADR-003 Domain and URL Strategy: adr/ADR-003-domain-url-strategy.md
-      - ADR-004 Library Ownership Model: adr/ADR-004-library-ownership-model.md
-  - Migrations:
-      - Overview: migrations/index.md
-      - codex-core: migrations/codex-core.md
-      - codex-platform: migrations/codex-platform.md
-      - codex-ai: migrations/codex-ai.md
-      - codex-services: migrations/codex-services.md
-      - codex-django: migrations/codex-django.md
-      - codex-django-cli: migrations/codex-django-cli.md
-      - codex-bot: migrations/codex-bot.md
+      - Overview: libraries/index.md
+      - codex-core: libraries/codex-core.md
+      - codex-platform: libraries/codex-platform.md
+      - codex-ai: libraries/codex-ai.md
+      - codex-services: libraries/codex-services.md
+      - codex-django: libraries/codex-django.md
+      - codex-django-cli: libraries/codex-django-cli.md
+      - codex-bot: libraries/codex-bot.md
+  - Updates: updates.md
+  - Developers: developers.md
