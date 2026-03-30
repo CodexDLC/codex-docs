@@ -1,0 +1,13 @@
+library_id: example-library
+display_name: Example Library
+role: foundation
+maturity_status: active
+latest_docs_url: https://example.invalid/latest/
+supported_version_lines:
+  - latest
+  - 1.x
+related_libraries:
+  - codex-core
+  - codex-platform
+readme_source: README.md
+landing_owner: docs

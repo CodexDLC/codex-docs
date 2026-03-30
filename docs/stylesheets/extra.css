@@ -1,0 +1,11 @@
+:root {
+  --codex-callout-bg: rgba(0, 150, 136, 0.08);
+  --codex-callout-border: rgba(0, 150, 136, 0.35);
+}
+
+.codex-callout {
+  border: 1px solid var(--codex-callout-border);
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  background: var(--codex-callout-bg);
+}
