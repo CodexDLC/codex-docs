@@ -14,7 +14,9 @@ The shell is close to standard, but the landing page is too brief and does not y
 
 ## Must-have changes
 
-- Build a full canonical landing page
+- Build a full canonical `Home` landing page according to `Home Landing Standard`
+- Keep `Home` outside both language guide trees and avoid inheriting the wrong sidebar context
+- Declare `site_url` in `mkdocs.yml` to match the publishing standard
 - Align README and PyPI package surfaces to the short-form standard
 - Confirm changelog placement and roadmap policy
 - Add related-library context and recommended user paths

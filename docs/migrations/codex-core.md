@@ -14,7 +14,9 @@ Strong shell alignment and versioning baseline. Landing tone and roadmap/changel
 
 ## Must-have changes
 
-- Bring the home page to the standard library landing structure
+- Bring `Home` to the standard library landing structure defined in `Home Landing Standard`
+- Keep `Home` as a top-level route outside both `Guide (EN)` and `Руководство (RU)`
+- Declare `site_url` in `mkdocs.yml` to match the publishing standard
 - Normalize roadmap and changelog placement against the standard
 - Remove tone drift such as emoji-led framing where not needed
 - Align README with the short-form package surface contract

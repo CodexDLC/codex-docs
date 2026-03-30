@@ -31,6 +31,7 @@ Library repositories must follow this standard unless an approved exception is r
 ## Core documents
 
 - [Information Architecture](information-architecture.md)
+- [Home Landing Standard](home-landing-standard.md)
 - [Library Landing Standard](library-landing-standard.md)
 - [README and PyPI Standard](readme-pypi-standard.md)
 - [API Reference Standard](api-reference-standard.md)

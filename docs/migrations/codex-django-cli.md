@@ -16,7 +16,8 @@ Close to the target package model, but palette and label drift remain and should
 
 - Normalize palette and theme behavior to the shared shell
 - Align navigation labels with the standard
-- Bring landing and README into the canonical package-entry shape
+- Bring `Home` and README into the canonical package-entry shape
+- Keep `Home` outside both language guide trees and validate EN/RU parity explicitly
 - Validate roadmap placement against the standard
 
 ## Optional improvements

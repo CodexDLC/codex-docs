@@ -6,6 +6,7 @@ This page is the quiet entrance to the internal documentation that lives in the 
 
 - [Overview](standards/index.md)
 - [Information Architecture](standards/information-architecture.md)
+- [Home Landing Standard](standards/home-landing-standard.md)
 - [Library Landing Standard](standards/library-landing-standard.md)
 - [README and PyPI Standard](standards/readme-pypi-standard.md)
 - [API Reference Standard](standards/api-reference-standard.md)
@@ -41,3 +42,15 @@ This page is the quiet entrance to the internal documentation that lives in the 
 - [codex-django](migrations/codex-django.md)
 - [codex-django-cli](migrations/codex-django-cli.md)
 - [codex-bot](migrations/codex-bot.md)
+
+## Agent workflow
+
+When an agent is updating a library repository, the required reading order is:
+
+1. [Docs Standard Overview](standards/index.md)
+2. [Information Architecture](standards/information-architecture.md)
+3. [Home Landing Standard](standards/home-landing-standard.md)
+4. [Library Landing Standard](standards/library-landing-standard.md)
+5. the migration file for the target library
+
+The agent must not invent its own home-page model, language structure, or top-level navigation if those rules are already specified here.

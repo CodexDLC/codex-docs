@@ -14,7 +14,9 @@ Strong architecture and API organization, but the landing page is thinner than t
 
 ## Must-have changes
 
-- Expand home into the canonical library landing shape
+- Expand `Home` into the canonical library landing shape defined in `Home Landing Standard`
+- Keep `Home` outside both language guide trees and route users into them deliberately
+- Declare `site_url` in `mkdocs.yml` to match the publishing standard
 - Add explicit related libraries and entry paths
 - Align README and PyPI with the docs-first package surface contract
 - Review roadmap handling and leave it absent unless justified

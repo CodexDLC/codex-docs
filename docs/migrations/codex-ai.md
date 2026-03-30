@@ -14,7 +14,9 @@ The site explains the package well, but the home page still behaves more like a 
 
 ## Must-have changes
 
-- Replace the current home with the standard landing structure
+- Replace the current `Home` with the standard landing structure defined in `Home Landing Standard`
+- Keep `Home` as a top-level route outside both language guide trees
+- Declare `site_url` in `mkdocs.yml` to match the publishing standard
 - Add stronger ecosystem-role and related-library blocks
 - Align README and PyPI to the docs-first contract
 - Keep API reference structure but normalize entry labels if needed

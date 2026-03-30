@@ -16,7 +16,9 @@ The repository has the strongest visible drift in palette, top-level shell behav
 
 - Migrate theme and feature flags to the shared shell
 - Adopt the `latest + major lines` version model
-- Normalize landing page structure to the standard
+- Normalize `Home` landing page structure to `Home Landing Standard`
+- Keep `Home` outside both language guide trees and document any language gap explicitly
+- Declare `site_url` in `mkdocs.yml` to match the publishing standard
 - Align README and package positioning to the docs-first contract
 - Track URL migration carefully because this site differs from the others
 
